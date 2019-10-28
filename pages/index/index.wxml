@@ -1,0 +1,19 @@
+
+<view class="container">
+
+  <!-- 搜索框部分 -->
+  <view class="search"></view>
+
+  <!-- 轮播图部分 -->
+  <view class="swiper"></view>
+
+  <!-- 分类部分 -->
+  <view class="menu"></view>
+
+  <!-- 推荐部分 -->
+  <view class="recommend"></view>
+
+  <!-- 底部部分 -->
+  <view class="bottom"></view>
+
+</view>
