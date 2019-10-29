@@ -2,7 +2,10 @@
 <view class="container">
 
   <!-- 搜索框部分 -->
-  <view class="search"></view>
+  <view class="search">
+    <view class="iconfont iconsearch"></view>
+    <input placeholder="搜索"></input>
+  </view>
 
   <!-- 轮播图部分 -->
   <view class="swiper"></view>

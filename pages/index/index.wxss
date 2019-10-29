@@ -1,0 +1,26 @@
+/* .container{} */
+
+.search{
+  position: relative;
+  width: 100%;
+  padding: 20rpx 16rpx;
+  box-sizing: border-box;
+  background-color: #ff2d4a;
+}
+
+input{
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 5rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #bbb;
+}
+
+.iconsearch{
+  position: absolute;
+  top: 34%;
+  left: 42%;
+  font-size: 32rpx;
+  color: #bbb;
+}
