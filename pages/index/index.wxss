@@ -1,26 +1,49 @@
-/* .container{} */
 
-.search{
-  position: relative;
+.swiper{
+  margin-bottom: 24rpx;
+}
+
+.swiper image{
   width: 100%;
-  padding: 20rpx 16rpx;
-  box-sizing: border-box;
-  background-color: #ff2d4a;
+  height: 100%
 }
 
-input{
+.menus{
+  display: flex;
+  padding: 20rpx 0;
+  justify-content: space-around;
+}
+
+.menus image{
+  width: 128rpx;
+  height: 140rpx;
+}
+
+.floor-title image{
+  width: 100%;
   height: 60rpx;
-  background-color: #fff;
-  border-radius: 5rpx;
-  text-align: center;
-  font-size: 24rpx;
-  color: #bbb;
 }
 
-.iconsearch{
-  position: absolute;
-  top: 34%;
-  left: 42%;
-  font-size: 32rpx;
-  color: #bbb;
+.floor{
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx;
+}
+
+.floor .left image{
+  width: 232rpx;
+  height: 390rpx;
+}
+
+.floor .right{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 20rpx;
+}
+
+.floor .right image{
+  width:230rpx;
+  height: 190rpx;
 }

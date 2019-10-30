@@ -73,7 +73,7 @@ const request = (config) => {
 
 // 指定request默认配置
 request.defaults = {
-  baseURL: ""  // "https://api.github.com"
+  baseURL: "https://api.zbztb.cn"  // "https://api.github.com"
 };
 
 // 用来缓存拦截器的函数

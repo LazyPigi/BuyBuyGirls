@@ -2,21 +2,56 @@
 <view class="container">
 
   <!-- 搜索框部分 -->
-  <view class="search">
-    <view class="iconfont iconsearch"></view>
-    <input placeholder="搜索"></input>
-  </view>
+  <!-- 导入搜索组件 -->
+  <search/>
 
   <!-- 轮播图部分 -->
-  <view class="swiper"></view>
+  <view class="swiper">
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{banners}}" wx:key="{{index}}">
+            <swiper-item>
+              <image mdoe="aspectFit" src="{{item.image_src}}"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+    </view>
+  </view>
 
   <!-- 分类部分 -->
-  <view class="menu"></view>
+  <view class="menus">
+    <navigator url="" wx:for="{{menus}}" wx:key="{{index}}">
+      <image src="{{item.image_src}}"></image>
+    </navigator> 
+  </view>
 
-  <!-- 推荐部分 -->
-  <view class="recommend"></view>
+  <!-- 楼层部分 -->
+  <view wx:for="{{floors}}" v:key="{{index}}">
+    <view class="floor-title">
+      <image mode="aspectFill" src="{{item.floor_title.image_src}}"></image>
+    </view>
 
-  <!-- 底部部分 -->
-  <view class="bottom"></view>
+    <view class="floor">
+      <!-- 左侧的大图 -->
+      <view class="left">
+        <navigator url="{{item.product_list[0].navigator_url }}">
+          <image src="{{ item.product_list[0].image_src }}"></image>
+        </navigator>
+      </view>
 
+      <!-- 右侧的四张小图 -->
+      <view class="right">
+        <navigator url="{{ item.navigator_url }}"
+        wx:for="{{ item.product_list }}"
+        wx:key="{{index}}"
+        wx:if="{{ index > 0 }}">
+          <image src="{{ item.image_src }}"></image>
+        </navigator>
+      </view>
+    </view>
+  </view>
 </view>
