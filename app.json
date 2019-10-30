@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category",
-    "pages/category/index"
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/personal/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,6 +11,8 @@
     "navigationBarTitleText": "优购",
     "navigationBarTextStyle": "white"
   },
+  "sitemapLocation": "sitemap.json",
+
   "tabBar": {
     "selectedColor": "#ff2d4a",
     "list": [
@@ -38,6 +41,5 @@
         "selectedIconPath": "./images/icon_me_active@3x.png"
       }
     ]
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }
