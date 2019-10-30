@@ -1,0 +1,20 @@
+<!-- 导入头部的组件 -->
+<search/>
+
+<view class="container">
+  <!-- 左侧的菜单列表 -->
+  <view class="menu">
+    <view class="menu-item {{ current === index ? 'active': '' }}" 
+    wx:for="{{ [1,2,3,4,5,6,7,8,9,10] }}"
+    wx:key="{{ index }}"
+    bindtap="handleChange"
+    data-index="{{index}}">
+      电器{{index}}
+    </view>
+  </view>
+
+  <!-- 右边的品牌列表 -->
+  <view class="content">
+    选中对应的页面 {{current}}
+  </view>
+</view>

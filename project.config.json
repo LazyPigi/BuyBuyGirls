@@ -56,8 +56,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "dev",
-					"pathName": "pages/index/index",
+          "name": "pages/category/index",
+          "pathName": "pages/category/index",
 					"query": "",
 					"scene": null
 				}

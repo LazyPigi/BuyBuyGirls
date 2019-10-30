@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/category",
+    "pages/category/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,9 +21,9 @@
       },
       {
         "pagePath": "pages/index/index",
-        "text": "分类", 
+        "text": "分类",
         "iconPath": "./images/icon_category@3x.png",
-        "selectedIconPath": "./images/icon_category_active@3x.png" 
+        "selectedIconPath": "./images/icon_category_active@3x.png"
       },
       {
         "pagePath": "pages/index/index",
