@@ -18,5 +18,8 @@ Page({
     this.setData({
       query
     });
+
+    // 请求数据列表
+    console.log(options)
   }
 })
