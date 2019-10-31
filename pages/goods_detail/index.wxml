@@ -1,20 +1,20 @@
 <!-- 轮播图 -->
 <swiper indicator-dots class="swiper">
-  <block wx:for="{{ [1,1,1] }}" wx:key="{{index}}">
+  <block wx:for="{{ detail.pics }}" wx:key="{{index}}">
     <swiper-item>
-      <image src="https://img.alicdn.com/imgextra/i4/2967904160/O1CN01B692871gbKC4q7OJW_!!2967904160.jpg_430x430q90.jpg" mode="aspectFill"></image>
+      <image src="{{ item.pics_big }}" mode="aspectFill"></image>
     </swiper-item>
   </block>
 </swiper>
 
 <!-- 商品信息 -->
 <view class="goods-info">
-  <view class="goods-price">￥1099.00</view>
+  <view class="goods-price">￥{{ detail.goods_price }}</view>
 
   <!-- 标题部分 -->
   <view class="goods-title">
     <view class="goods-title-left">
-      外套男翻领2019秋季单排扣中长款男装帅气男士过膝英伦风潮流风衣
+      {{ detail.goods_name }}
     </view>
 
     <view class="goods-star">
@@ -25,3 +25,6 @@
 
   <view class="express">快递：免运费</view>
 </view>
+
+<!-- 商品详情, nodes相当于v-html的作用 -->
+<rich-text nodes="{{detail.goods_introduce}}"></rich-text>
