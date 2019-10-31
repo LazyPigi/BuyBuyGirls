@@ -1,0 +1,80 @@
+.search{
+  background: #eee;
+  padding: 20rpx;
+}
+
+.search .search-input{
+  padding: 0 20rpx;
+  background: #fff;
+  height: 60rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  border-radius: 4px;
+}
+
+.search .search-input icon{
+  margin-right: 10rpx;
+}
+
+.goods-sort{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.goods-sort .arrow{
+    position: relative;
+    padding-right: 10px; 
+}
+
+.goods-sort image{
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 5px;
+  height: 14px;
+}
+
+.goods-sort .active{
+  color:red;
+}
+
+.goods-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom:1px #ddd solid;
+}
+
+.goods-item image{
+  width:200rpx;
+  height:200rpx;
+}
+
+.goods-item-right{
+  flex:1;
+  padding-left:20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goods-title{
+  font-size:14px;
+  
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  /*控制在3行*/
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+}
+
+.goods-price{
+  color:red;
+}

@@ -18,6 +18,11 @@ Page({
    */
   onLoad: function (options) {
     
+    // 设置分类页标题
+    wx.setNavigationBarTitle({
+      title: '分类'
+    })
+    
     // 请求分类页数据
     request({
       url: "/api/public/v1/categories"

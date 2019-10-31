@@ -1,0 +1,34 @@
+<!-- 搜索栏 -->
+<view class="search">
+  <view class="search-input">
+    <!-- 小程序原生的组件 -->
+    <icon type="search" size="16"></icon>
+    搜索
+  </view>
+</view>
+
+<!-- 导航栏 -->
+<view class="goods-sort">
+  <view class="active">综合</view>
+  <view>销量</view>
+  <view class="arrow">
+  <view>价格</view>
+    <image src="../../images/icon_sort_down@2x.png"></image>
+  </view>
+</view>
+
+<!-- 商品列表 -->
+<navigator url="" class="goods-item">
+    <image src="https://img12.360buyimg.com/jdcms/s300x300_jfs/t9997/121/2999777164/216621/c4ff1461/5cde59bcN3a252cba.jpg.webp" mode="aspectFill"></image>
+
+    <!-- 商品列表的右侧 -->
+    <view class="goods-item-right">
+      <view class="goods-title">
+        达利园巧克力派
+      </view>
+
+      <view class="goods-price">
+        ￥69.00
+      </view>
+    </view>
+</navigator>
