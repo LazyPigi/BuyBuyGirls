@@ -24,6 +24,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    // 设置分类页标题
+    wx.setNavigationBarTitle({
+      title: '商品列表'
+    })
+
     // options是页面的传参数，比如 { query: "曲面电视" }
     const {query} = options;
 

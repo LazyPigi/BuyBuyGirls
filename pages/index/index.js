@@ -1,6 +1,10 @@
 import request from "../../utils/request.js"
 
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
     indicatorDots: true,
     vertical: false,
@@ -12,13 +16,23 @@ Page({
     floors: []
   },
 
-  onLoad() {
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+    // 设置分类页标题
+    wx.setNavigationBarTitle({
+      title: '首页'
+    })
+
     // 轮播图
     request({
       url: "/api/public/v1/home/swiperdata"
     }).then(res => {
       const {message} = res.data;
       console.message;
+      
       this.setData({
         banners: message
       })
@@ -45,6 +59,5 @@ Page({
         floors: message
       })
     })
-
   },
 })

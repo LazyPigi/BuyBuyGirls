@@ -14,6 +14,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    // 设置分类页标题
+    wx.setNavigationBarTitle({
+      title: '商品详情'
+    })
+
     // 获取id
     const { goods_id } = options;
 

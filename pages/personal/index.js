@@ -13,6 +13,11 @@ Page({
    */
   onLoad: function (options) {
 
+    // 设置分类页标题
+    wx.setNavigationBarTitle({
+      title: '我的'
+    })
+    
   },
 
   /**
