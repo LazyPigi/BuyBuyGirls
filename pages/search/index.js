@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showCancel: false
   },
 
   /**
@@ -18,5 +18,19 @@ Page({
       title: '商品搜索'
     })
   },
+
+  // 监听输入框输入时候的事件
+  handleInput(event){
+    // console.log(event)
+    const {value} = event.detail
+    // console.log(value)
+    let showCancel;
+    // 判断输入框有没值, value.trim()去除前后空格
+    showCancel = value.trim() ? true : false
+
+    this.setData({
+      showCancel
+    })
+  }
 
 })
